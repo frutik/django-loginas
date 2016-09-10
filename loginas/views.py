@@ -47,8 +47,8 @@ def _load_module(path):
     return can_login_as
 
 
-@csrf_protect
-@require_POST
+#@csrf_protect
+#@require_POST
 def user_login(request, user_id):
     user = User.objects.get(pk=user_id)
 
